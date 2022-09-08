@@ -9,6 +9,10 @@ finish-args:
 - --filesystem=home
 - --share=network
 
+UDPLoggerParameters:
+  git_url: &git_url https://gitlab.com/Murmele/UDPLogger.git
+  git_tag: &git_tag 7277933c6cf8f377ae81cac055e150ad313eae1a
+
 modules:
 # netcdf requires that hdf5 is build with zlib
 - name: zlib
@@ -63,6 +67,6 @@ modules:
   buildsystem: cmake-ninja
   sources:
   - type: git
-    url: https://gitlab.com/Murmele/UDPLogger.git
-    commit: 7277933c6cf8f377ae81cac055e150ad313eae1a
+    url: *git_url
+    commit: *git_tag
  
