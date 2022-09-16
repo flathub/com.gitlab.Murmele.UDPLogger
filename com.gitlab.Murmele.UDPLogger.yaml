@@ -11,7 +11,7 @@ finish-args:
 
 UDPLoggerParameters:
   git_url: &git_url https://gitlab.com/Murmele/UDPLogger.git
-  git_tag: &git_tag 7277933c6cf8f377ae81cac055e150ad313eae1a
+  git_tag: &git_tag V2.6.1
 
 modules:
 # netcdf requires that hdf5 is build with zlib
@@ -68,5 +68,5 @@ modules:
   sources:
   - type: git
     url: *git_url
-    commit: *git_tag
+    tag: *git_tag
  
